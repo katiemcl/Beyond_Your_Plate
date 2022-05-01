@@ -1,0 +1,122 @@
+{% extends 'prof/main.html' %}
+{% load static %}
+
+{% block content %}
+
+{% include 'prof/workshopnav.html' %}
+
+<img id="home_banner" src="{% static 'images/banner.png' %}"> 
+
+<div class="container">
+    <p class="section_text">
+        The complexity of this process that we discovered through these conversations guided us conclude that there is 
+        no simple solution to providing affordable, sustainable options for local restaurants. Instead, we pulled 
+        inspiration from existing theories to extend beyond solutions and encourage ruminating in the complex problem itself. 
+    </p>
+    <p class="section_text">  
+        Our workshop lasted 45 minutes and was broken down into three sections: laying down initial assumptions, 
+        storytelling the preparation process, and a meal with discussion.
+    </p>
+    
+    <h2 class="section_header">pre-workshop</h2>
+
+    <p class="section_text">
+        The event informally started a little over two weeks before the in-person component of the event. 
+        Two Mondays before the event, we sent an email to all attendees detailing the process Lynn has to go through
+        to buy ingredients. Because prices are highly variable (especially for fish), she must call all of her vendors
+        every week to compare prices and ensure that she is receiving quality ingredients for an affordable price.
+    </p>
+
+    <img id="workshop_img" src="{% static 'images/email.png' %}">
+
+    <p class="section_text">
+        We also sent an email for each of the Tuesdays before, the night before, and the morning of our event to shine a 
+        light on the amount of time and labor that goes into preparing a few dishes.
+    </p>
+
+    <h2 class="section_header">part 1: naming assumptions</h2>
+
+    <p class="section_text">
+        Our opening exercise guided participants to describe their initial assumptions about food sourcing. We asked 
+        participants to jot their answers on their placemat. This placement consisted of the menu items we were serving 
+        at the end of the workshop as well as empty boxes to be filled with reflection notes. The intention of this initial 
+        exercise was to orient our participants and make their own assumptions salient before engaging with the stories.
+    </p>
+
+    <img id="workshop_img" src="{% static 'images/placemat.png' %}">
+
+    <p class="center caption">
+        Placemat with menu of items served at the event. Designed by Raya.
+    </p>
+
+    <h2 class="section_header">part 2: storytelling</h2>
+
+    <p class="section_text">
+        The next aspect of our workshop was storytelling the laborious preparation process. This segment pulled inspiration 
+        from the concept of “matters of concern”, which are conditions that rely on subjective experiences and political 
+        conditions. The goal in this segment is not to ideate solutions, but to engage with the issues themselves. 
+        In our workshop’s case, the matter of concern was the complex relationship between capitalism and sustainability 
+        from a small, family-owned restaurant’s perspective. We offer no immediate solution, but instead, leave it open-ended 
+        for discussion. With her permission, we wove in recorded clips of our conversation from Lynn. With an animation of
+        the preparation process playing in the background, these elements helped visceralize the experience and stories for 
+        the event participants. While the stories were spoken, we asked participants to draw on the bottom of their glass plates 
+        with pieces of the story that resonated with them or how they felt during this process.
+    </p>
+
+    <img id="workshop_img" src="{% static 'images/animation.png' %}">
+
+    <p class="center caption">
+        A frame of the animation that visualizes the preparation of salmon teriyaki. Made by Ashley. 
+    </p>
+
+    <h2 class="section_header">part 3: eating and reflecting</h2>
+
+    <p class="section_text">
+        We ended our workshop over a meal from the restaurant itself and a space to discuss our reflections. Eating off of
+        the decorated glass plate, participants could see through to the placemat. This interaction encourages participants to think
+        about what happens beyond their plate and reflect how their new learnings sit with their initial assumptions.
+    </p>
+    
+    <p class="section_text">
+        A sentiment that consistently arose during the discussion was the shocking realization  of how laborious and time-consuming 
+        food preparation is. In relation to sustainability, various points were brought up from sympathy to suggestions 
+        such as raising prices to help afford sustainable ingredients. Clarifying questions about ingredient sourcing and 
+        what restaurants did with food waste came up. Aside from referencing our interview with Vincent about food waste, 
+        we weren’t able to answer these questions, highlighting the lack of transparency in ingredient sourcing. 
+    </p>
+
+    <p class="section_text">
+       Pictured below are some of the placemats and plates from our classmates and professor. 
+    </p>
+
+    <div class="row center">
+        <div class="col-6">
+            <img class="img-fluid" id="plate_img1" src="{% static 'images/1.1.jpg' %}">
+        </div>
+        <div class="col-6">
+            <img class="img-fluid" id="plate_img2" src="{% static 'images/1.2.jpg' %}">
+        </div>
+    </div>
+
+    <div class="row center">
+        <div class="col-6">
+            <img class="img-fluid" id="plate_img1" src="{% static 'images/2.1.jpg' %}">
+        </div>
+        <div class="col-6">
+            <img class="img-fluid" id="plate_img2" src="{% static 'images/2.2.jpg' %}">
+        </div>
+    </div>
+
+    <div class="row center">
+        <div class="col-6">
+            <img class="img-fluid" id="plate_img2" src="{% static 'images/3.jpg' %}">
+        </div>
+        <div class="col-6">
+            <img class="img-fluid" id="plate_img2" src="{% static 'images/4.jpg' %}">
+        </div>
+    </div>
+    <br><br>
+</div>
+
+
+{% endblock %}

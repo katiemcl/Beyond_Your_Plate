@@ -1,0 +1,62 @@
+{% extends 'prof/main.html' %}
+{% load static %}
+
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-light navcolor">
+    <div class="container-fluid">
+        <div class="navbar-nav">
+            <a class="navbar-brand">beyond our plate</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active-link" id="pg-home" href="{% url 'home' %}">home</a>
+                <a class="nav-link" id="pg-workshop" href="{% url 'workshop' %}">our workshop</a>
+                <a class="nav-link" id="pg-yourturn" href="{% url 'yourturn' %}">your turn</a>
+                <a class="nav-link" id="pg-contact" href="{% url 'contact' %}">contact us</a>
+            </div>
+        </div>
+    </div>
+</nav>
+ 
+<img id="home_banner" src="{% static 'images/home_banner.png' %}">  
+
+<div class="container">
+
+    <h2 class="section_header">our process</h2>
+
+    <p class="section_text">
+        This project started as an exploration of where our food comes from. As college students, this question is 
+        often left unanswered when we eat at the dining halls or are served food at local restaurants. With a 
+        shared interest in our relationship to the environment, data contextualiziations to drive community
+        collective action, and food, we sought to explore the food-agri supply chain and the journey that food
+        makes to get to our plate.
+    </p>
+
+    <p class="section_text">
+        Through our conversations with local restaurants in our community, we quickly saw that sustainability and 
+        locality were sensitive and politicized topics, especially with such large infrastructures outside of an 
+        individual’s control. Although this was a final project for a class cross-listed in the Computer Science 
+        department, we decided against designing a technical solution. Because the landscape was so complicated, we 
+        looked towards growing connection and establishing understanding between members of the community and our food. 
+        We therefore decided to design a food event to reveal these complications and encourage active community 
+        reflection as a step towards action.
+    </p>
+
+    <h2 class="section_header">our hopes</h2>
+
+    <p class="section_text">
+        This website documents how we used a place setting and interactive narration to visceralize our learnings 
+        from the stories that were shared with us. We hope that by sharing our journey, we spark conversations and bring 
+        stories of your favorite local restaurants to life. If you do hold an event like this (or one with your own spin),
+        please reach out and share! We can't wait to be inspired by your community's conversations about community
+        relationships and food systems beyond your plate.
+    </p>
+
+    <br><br>
+</div>
+
+{% endblock %}

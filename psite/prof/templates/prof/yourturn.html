@@ -1,0 +1,103 @@
+{% extends 'prof/main.html' %}
+{% load static %}
+
+{% block content %}
+
+{% include 'prof/yourturnnav.html' %}
+
+<img id="home_banner" src="{% static 'images/banner.png' %}"> 
+
+<div class="container">
+    <p class="section_text">
+        You read more about our event with Lynn and Sakura Express in Princeton (and if you haven't 
+        read about it yet, <a class="link" href="{% url 'workshop' %}">see here</a>). 
+        We hope that by sharing these materials with you, you can use these as a guide to starting 
+        conversations and hosting your own event about food with local restauarants in your community.
+    </p>
+
+    <h2 class="section_header">interview guide</h2>
+
+    <p class="section_text">
+        This <a class="link" 
+        href="https://katie-mcl.notion.site/beyond-our-plate-interview-template-529d2117fcd645ea82c72cc6a8884380" target="_blank">Notion</a> 
+        page holds our interview guide. Some of the questions are more specific to Sakura, so please
+        feel free to make a duplicate and adjust them to your local restaurants and any specific questions 
+        you might have.
+    </p>
+
+    <p class="tips_section">
+        💡 Helpful Tips
+    </p>
+        <ul class="list">
+            <li>Recording: ask for permission to voice record your interview so that you can be fully present in the conversation</li>
+            <li>Compensation: Before ending the interview, ask if there is anything you can do in return for them giving you their time. 
+                This is time that they could have spent working or relaxing, but instead they spent it with you!</li>
+        </ul>
+    
+
+    <h2 class="section_header">workshop materials</h2>
+
+    <ul class="list">
+        <li>clear glass plates </li>
+        <li>oil-based markers for plates</li>
+        <li>placemat [designed by Raya]</li>
+        <li>pens/sharpies for placemat</li>
+    </ul>
+
+    <h2 class="section_header">literature that inspired</h2>
+
+    <p class="section_text">
+    Biggs, H., Joshi, T., Murphy, R., Bardzell, J., & Bardzell, S. (2021). Alternatives to Agrilogistics: 
+    Designing for Ecological Thinking. <i>Proceedings of the ACM on Human-Computer Interaction</i>, 5(CSCW2), 1-31. https://doi.org/10.1145/3479557
+    <br><br>
+
+    Cook, Ian. 2004. “Follow the Thing: Papaya.” <i>Antipode</i>, 36(4):642–64. https://doi.org/10.1111/j.1467-8330.2004.
+    <br><br>
+
+    Dourish, Paul. "HCI and environmental sustainability: the politics of design and the design of
+    politics." In <i>Proceedings of the 8th ACM conference on designing interactive systems</i>. 2010. https://doi.org/10.1145/1858171.1858173
+    <br><br>    
+
+    Evans, David. 2014. <i>Food Waste: Home Consumption, Material Culture and Everyday Life.</i> 1st ed. London: Bloomsbury Academic.
+    <br><br> 
+
+    Iles, Alastair. “Learning in Sustainable Agriculture: Food Miles and Missing Objects.” <i>Environmental Values</i>, vol. 14, no. 2, White Horse Press, 2005, pp. 163–83, http://www.jstor.org/stable/30302303.
+    <br><br> 
+
+    Landwehr, M., Engelbutzeder, P., & Wulf, V. (2021, May). Community supported agriculture: the concept of solidarity in mitigating between harvests and needs. 
+    In <i>Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems</i> (pp. 1-13). https://doi.org/10.1145/3411764.3445268
+    <br><br> 
+
+    Pontis, S. (2019). <i>Making sense of field research: A practical guide for information designers</i>. Routledge.
+    <br><br> 
+
+    Rousseau, Signe. 2012. <i>Food Media: Celebrity Chefs and the Politics of Everyday Interference</i>. 1st ed. London: Berg.
+    <br><br> 
+
+    Sengers, Phoebe, Kirsten Boehner, Shay David, and Joseph “Jofish” Kaye. 2005. “Reflective
+    Design.” In <i>Proceedings of the 4th Decennial Conference on Critical Computing:
+    Between Sense and Sensibility</i>, 49. ACM Press. https://doi.org/10.1145/1094562.1094569
+    <br><br> 
+
+    Simpson, A. (2007). On ethnographic refusal: Indigeneity, ‘Voice’ and colonial citizenship.
+    <i>Junctures: The Journal for Thematic Dialogue 9</i>, https://junctures.org/index.php/junctures/article/view/66/60.
+    <br><br> 
+
+    Sonnino, Roberta, Terry Marsden, and Ana Moragues-Faus. "Relationalities and convergences in food security narratives: 
+    towards a place-based approach." <i>Transactions of the Institute of
+    British Geographers</i> 41.4 (2016): 477-489. https://www.jstor.org/stable/45147054?seq=1
+    <br><br> 
+
+    Stefaner, M. <i>The Rhythm of Food.</i> Truth & Beauty. https://truth-and-beauty.net/projects/the-rhythm-of-food
+    <br><br> 
+
+    Stefaner, M., & Jaschko, S. <i>Data Cuisine</i>. Data Cuisine. https://data-cuisine.net/
+    <br><br> 
+
+    Szasz, Andrew. 2007. <i>Shopping Our Way to Safety: How We Changed from Protecting the Environment to Protecting Ourselves</i>. NED-New edition. University of Minnesota Press.
+    <br><br> 
+</p>
+
+</div>
+
+{% endblock %}

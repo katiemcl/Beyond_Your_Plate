@@ -1,0 +1,49 @@
+{% extends 'prof/main.html' %}
+{% load static %}
+
+{% block content %}
+
+{% include 'prof/contactnav.html' %}
+
+<img id="home_banner" src="{% static 'images/banner.png' %}"> 
+
+<div class="container">
+    <h2 class="section_header">contact us</h2>
+
+    <p class="section_text">
+        Thank you for visiting our corner of the internet! We hope that you've learned a few things while you're here. 
+        The materials found on this site were put together as a collaborative effort for our final group project in 
+        <a class="link" href=https://registrar.princeton.edu/course-offerings/course-details?term=1224&courseid=011914
+        target="_blank">SOC/COS 409</a>: 
+        Critical Approaches to Human Computer Interaction at Princeton University.
+    </p>
+
+    <p class="section_text">
+        We're excited that you're thinking about starting conversations of sustainability with local restaurants in 
+        your community. If you have any questions, please do not hesitate to connect with any or all of us:
+    </p>
+
+    <div class="row section_text">
+        <div class="col-sm-6 col-md-3">
+            Ashley To <br>
+            <a class="link" href = "mailto: ahto@princeton.edu">ahto@princeton.edu</a> <br>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            Hanzhang Ren<br>
+            <a class="link" href = "mailto: hr6@princeton.edu">hr6@princeton.edu</a> <br>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            Katie McLaughlin <br>
+            <a class="link" href = "mailto: kjm3@princeton.edu">kjm3@princeton.edu</a> <br>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            Raya Ward <br> 
+            <a class="link" href = "mailto: rmward@princeton.edu">rmward@princeton.edu</a> <br>
+        </div>
+      </div>
+        
+    
+</div>
+
+
+{% endblock %}
